@@ -218,5 +218,8 @@ if __name__ == "__main__":
     torch.autograd.set_detect_anomaly(args.detect_anomaly)
     training(lp.extract(args), op.extract(args), pp.extract(args), args.test_iterations, args.save_iterations, args.checkpoint_iterations, args.start_checkpoint, args.debug_from)
 
+    # Print GPU memory usage
+    print(f"CUDA Max Memory Allocated: {torch.cuda.max_memory_allocated() / (1024 ** 3)} GB")
+
     # All done
     print("\nTraining complete.")

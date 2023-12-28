@@ -72,3 +72,6 @@ if __name__ == "__main__":
     safe_state(args.quiet)
 
     render_sets(model.extract(args), args.iteration, pipeline.extract(args), args.skip_train, args.skip_test)
+
+    # Print GPU memory usage
+    print(f"CUDA Max Memory Allocated: {torch.cuda.max_memory_allocated() / (1024 ** 3)} GB")
