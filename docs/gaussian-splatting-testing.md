@@ -1,7 +1,7 @@
 # 3D-GS实验结果
 
 
-## 3D-GS实验结果表格
+## 3D-GS Baseline实验结果表格
 
 |               Metrics\Dataset                | DrJohnson | Playroom |  Train  |  Truck  |
 | :------------------------------------------: | :-------: | :------: | :-----: | :-----: |
